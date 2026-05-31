@@ -73,7 +73,7 @@ export default function Footer(): React.JSX.Element {
 
         <div className="text-center mt-12 pt-8 border-t border-white/10">
           <p className="text-white/60 text-sm">
-            © {new Date().getFullYear()} Ibrahim Memon. All rights reserved.
+            © {new Date().getFullYear()} Brian Parkansky. All rights reserved.
           </p>
         </div>
       </div>
