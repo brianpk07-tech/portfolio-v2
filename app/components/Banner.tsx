@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import maPhoto from '@/public/assets/brian.png';
 
 export default function Banner(): React.JSX.Element {
   const texts = ["Software Engineer", "UI/UX Designer", "React Native Developer"];
@@ -76,7 +75,7 @@ export default function Banner(): React.JSX.Element {
                 </div>
               </div>
               <Image
-                <img src={maPhoto.src} alt="Ma photo" />
+                src="/assets/me.png"
                 alt="Brian Parkansky - Software Engineer and Designer"
                 width={300}
                 height={300}
