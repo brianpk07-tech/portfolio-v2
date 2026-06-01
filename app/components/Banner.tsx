@@ -119,7 +119,7 @@ export default function Banner(): React.JSX.Element {
                 Juge un livre
                 <br /> à sa{" "}
                 <span className="relative inline-block">
-                  <Image src="/assets/circle.png" alt="Circle" width={300} height={200} className="absolute mt-2 max-w-none w-[125%] left-[-12%]" />
+                  <Image src="/assets/circle.png" alt="Circle" width={300} height={200} className="absolute max-w-none w-[115%] left-0 -top-1" />
                   <span className="bg-gradient-to-r from-violet-600 via-violet-400 to-violet-600 bg-clip-text text-transparent">
                     couverture
                   </span>
@@ -134,7 +134,7 @@ export default function Banner(): React.JSX.Element {
         </div>
         <div className="space-y-3 pt-15 text-center lg:text-left">
           <p className="text-5xl text-white font-bold">
-            I&apos;m a {displayedText}
+            Je&apos;suis un {displayedText}
             <span className="animate-pulse">|</span>
           </p>
           <p className="text-lg lg:text-xl text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
