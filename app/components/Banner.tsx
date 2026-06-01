@@ -139,7 +139,6 @@ export default function Banner(): React.JSX.Element {
           <p className="text-lg lg:text-xl text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
             <span>Actuellement, étudiant en</span>
             <span className="flex items-center gap-2">
-              <Image src="/assets/webhr.webp" alt="WebHR" width={20} height={20} className="w-5 h-5" style={{ width: "auto", height: "auto" }} />
               <span className="text-blue-400 font-semibold">Ingénierie Data Sciences et Management</span>
             </span>
           </p>
