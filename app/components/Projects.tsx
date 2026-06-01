@@ -48,34 +48,34 @@ const featuredProjects: Project[] = [
 function ProjectCarousel({ images, title }: { images: string[]; title: string }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePrev = () => {
+  const handlePrev = (e: React.MouseEvent) => {
+    e.preventDefault();
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 : 0 : prevIndex + 1));
+  const handleNext = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
 
   return (
-    <div className="flex flex-col items-center gap-4 w-full">
+    <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 p-2 lg:p-3 shadow-2xl group">
       {/* Container Image */}
-      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 p-2 lg:p-3 shadow-2xl">
-        <div className="relative w-full h-full rounded-lg overflow-hidden">
-          <Image
-            src={images[currentIndex]}
-            alt={`${title} - image ${currentIndex + 1}`}
-            fill
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover transition-all duration-300"
-          />
-        </div>
+      <div className="relative w-full h-full rounded-lg overflow-hidden">
+        <Image
+          src={images[currentIndex]}
+          alt={`${title} - image ${currentIndex + 1}`}
+          fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          className="object-cover transition-all duration-300"
+        />
       </div>
 
-      {/* Flèches de navigation en bas de l'image */}
-      <div className="flex items-center gap-6 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full backdrop-blur-sm">
+      {/* Flèches de navigation superposées en bas de l'image */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-4 bg-slate-900/80 border border-white/10 px-4 py-2 rounded-full backdrop-blur-md z-30 shadow-xl">
         <button
           onClick={handlePrev}
-          className="text-white/60 hover:text-purple-400 transition-colors"
+          className="text-white/70 hover:text-purple-400 transition-colors p-1"
           aria-label="Image précédente"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
@@ -83,13 +83,13 @@ function ProjectCarousel({ images, title }: { images: string[]; title: string })
           </svg>
         </button>
 
-        <span className="text-sm text-white/50 font-mono">
+        <span className="text-sm text-white font-mono min-w-[40px] text-center select-none">
           {currentIndex + 1} / {images.length}
         </span>
 
         <button
           onClick={handleNext}
-          className="text-white/60 hover:text-purple-400 transition-colors"
+          className="text-white/70 hover:text-purple-400 transition-colors p-1"
           aria-label="Image suivante"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
@@ -100,7 +100,6 @@ function ProjectCarousel({ images, title }: { images: string[]; title: string })
     </div>
   );
 }
-
 export default function Projects(): React.JSX.Element {
   return (
     <section id="lab" className="py-20 px-6">
