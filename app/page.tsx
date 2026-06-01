@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Experience from "./components/Experience";
-import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
@@ -11,7 +10,6 @@ export default function Home(): React.JSX.Element {
       <Header />
       <Banner />
       <Experience />
-      <About />
       <Projects />
       <Footer />
     </main>
