@@ -13,13 +13,13 @@ const experienceCards: ExperienceCard[] = [
     id: 1,
     title: "Serveur - Pizzeria Il Pescatore",
     description: "De 2020 à 2022 j'ai été serveur dans une pizzeria, cela m'a appris à gérer la pression d'avoir beaucoup de clients à la fois, à developper mon relationnel et mon service client. ",
-    icon: "/cards/card-2.png",
+    icon: "/cards/card-3.png",
   },
   {
     id: 2,
     title: "Developpeur Web - Stage de 2 mois",
     description: "Dans le cadre d'un stage à l'étranger imposé par mon école, j'ai travaillé deux mois comme développeur web pour une association caritative en croatie où j'avais pour mission d'ajouter un système d'inscripiton et de suivi directement sur leur site à la place d'un forms et de google sheet.",
-    icon: "/cards/card-3.png",
+    icon: "/cards/card-2.png",
   },
 ];
 
