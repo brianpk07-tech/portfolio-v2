@@ -11,18 +11,35 @@ interface Project {
 const featuredProjects: Project[] = [
   {
     id: 1,
-    title: "NeuraWeb – Futuristic AI Website Landing Design",
+    title: "Developpement Web – Site de concession",
     description: "A sleek, dark-themed AI-powered landing page concept built in Figma. Designed for modern startups and futuristic digital products, it features glowing neon visuals, immersive UI, and a dynamic tone. The design encapsulates the cutting-edge possibilities of AI and tech, offering a glimpse into the future of online experiences for tech-forward companies.",
-    link: "https://www.figma.com/community/file/1441377868897233703/ai-website-landing-design",
     image: "/projects/project-1.png",
   },
   {
     id: 2,
-    title: "Apple Vision Pro – HR Software Design",
+    title: "Modélisation 3D – Reproduction de Los Angeles",
     description: "A futuristic HR software concept designed for Apple Vision Pro, built in Figma to reimagine attendance, leave tracking, and employee experience - all in one immersive interface.",
-   link: "https://www.figma.com/community/file/1371824014208363481/apple-vision-pro-hr-software-design",
     image: "/projects/project-2.png",
   },
+  {
+    id: 1,
+    title: "Etude de Marché – Michelin & Apple",
+    description: "A sleek, dark-themed AI-powered landing page concept built in Figma. Designed for modern startups and futuristic digital products, it features glowing neon visuals, immersive UI, and a dynamic tone. The design encapsulates the cutting-edge possibilities of AI and tech, offering a glimpse into the future of online experiences for tech-forward companies.",
+    image: "/projects/project-1.png",
+  },
+  {
+    id: 2,
+    title: "Développement d'une Méssagerie – Python",
+    description: "A futuristic HR software concept designed for Apple Vision Pro, built in Figma to reimagine attendance, leave tracking, and employee experience - all in one immersive interface.",
+    image: "/projects/project-2.png",
+  },
+  {
+    id: 1,
+    title: "Projet de lancement d'une App – Préparation",
+    description: "A sleek, dark-themed AI-powered landing page concept built in Figma. Designed for modern startups and futuristic digital products, it features glowing neon visuals, immersive UI, and a dynamic tone. The design encapsulates the cutting-edge possibilities of AI and tech, offering a glimpse into the future of online experiences for tech-forward companies.",
+    image: "/projects/project-1.png",
+  },
+  
 ];
 
 export default function Projects(): React.JSX.Element {
@@ -40,7 +57,7 @@ export default function Projects(): React.JSX.Element {
                 {/* Text Content */}
                 <div className={`${isEven ? "lg:col-start-2" : ""}`}>
                   <p className="text-purple-400 text-lg lg:text-xl mb-2 font-medium">
-                    Featured Project
+                    Mes Projets
                   </p>
                   <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">
                     {project.title}
