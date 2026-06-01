@@ -1,11 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // <-- Ajoutez cette ligne magique
-  images: {
-    unoptimized: true, // <-- Ajoutez aussi ça pour éviter les bugs d'images sur GitHub
-  },
-  basePath: '/portfolio-v2', // <-- AJOUTE CETTE LIGNE (avec le nom exact de ton dossier GitHub)
+  /* tes autres réglages s'il y en avait, mais sans basePath ni export */
 };
 
 export default nextConfig;
