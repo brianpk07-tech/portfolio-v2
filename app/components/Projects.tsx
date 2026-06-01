@@ -28,7 +28,7 @@ const featuredProjects: Project[] = [
     id: 3, // ID unique
     title: "Etude de Marché – Michelin & Apple",
     description: "Dans le cadre de mon bachelor, j'ai fait des études de marchés poussés en utilisant différents type d'outils d'analyse tels que le swot, pestel, matrice d'Eisenhower, 4P... J'ai étudié le cas de Apple ainsi que celui de Michelin.",
-    images: ["/projects/project-1.png", "/projects/project-2.png"],
+    images: ["/projects/3-1.png", "/projects/3-2.png","/projects/3-3.png", "/projects/3-4.png", "/projects/3-5.png", "/projects/3-6.png", "/projects/3-7.png", "/projects/3-8.png", "/projects/3-9.png", "/projects/3-10.png"],
   },
   {
     id: 4, // ID unique
