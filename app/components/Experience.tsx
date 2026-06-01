@@ -17,7 +17,7 @@ const experienceCards: ExperienceCard[] = [
   },
   {
     id: 2,
-    title: "Developpeur Web - CDD de 2 mois",
+    title: "Developpeur Web - Stage de 2 mois",
     description: "Dans le cadre d'un stage à l'étranger imposé par mon école, j'ai travaillé deux mois comme développeur web pour une association caritative en croatie où j'avais pour mission d'ajouter un système d'inscripiton et de suivi directement sur leur site à la place d'un forms et de google sheet.",
     icon: "/cards/card-3.png",
   },
