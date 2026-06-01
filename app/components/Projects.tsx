@@ -12,31 +12,31 @@ const featuredProjects: Project[] = [
   {
     id: 1,
     title: "Developpement Web – Site de concession",
-    description: "A sleek, dark-themed AI-powered landing page concept built in Figma. Designed for modern startups and futuristic digital products, it features glowing neon visuals, immersive UI, and a dynamic tone. The design encapsulates the cutting-edge possibilities of AI and tech, offering a glimpse into the future of online experiences for tech-forward companies.",
+    description: "J'ai toujours aimé les voitures, dans mon temps libre pendant mon année de seconde, j'ai développé un site de concession automobile tout en apprenant le html, css et javascript à ce moment là.",
     image: "/projects/project-1.png",
   },
   {
     id: 2,
     title: "Modélisation 3D – Reproduction de Los Angeles",
-    description: "A futuristic HR software concept designed for Apple Vision Pro, built in Figma to reimagine attendance, leave tracking, and employee experience - all in one immersive interface.",
+    description: "Depuis plusieurs années, je modélise en 3D via l'outil blender, en 2025 j'ai commencé une reproduction miniaturisée de la ville de los angeles aux états unis.",
     image: "/projects/project-2.png",
   },
   {
     id: 1,
     title: "Etude de Marché – Michelin & Apple",
-    description: "A sleek, dark-themed AI-powered landing page concept built in Figma. Designed for modern startups and futuristic digital products, it features glowing neon visuals, immersive UI, and a dynamic tone. The design encapsulates the cutting-edge possibilities of AI and tech, offering a glimpse into the future of online experiences for tech-forward companies.",
+    description: "Dans le cadre de mon bachelor, j'ai fait des études de marchés poussés en utilisant différents type d'outils d'analyse tels que le swot, pestel, matrice d'Eisenhower, 4P... J'ai étudié le cas de Apple ainsi que celui de Michelin.",
     image: "/projects/project-1.png",
   },
   {
     id: 2,
     title: "Développement d'une Méssagerie – Python",
-    description: "A futuristic HR software concept designed for Apple Vision Pro, built in Figma to reimagine attendance, leave tracking, and employee experience - all in one immersive interface.",
+    description: "Egalement dans le cadre de mon bachelor, j'ai dévellopé une messagerie local en python qui théoriquement fait communiquer deux ordinateurs entres eux, sauvegarde les conversations dans des logs, ainsi qu'un système de transfert d'image.",
     image: "/projects/project-2.png",
   },
   {
     id: 1,
     title: "Projet de lancement d'une App – Préparation",
-    description: "A sleek, dark-themed AI-powered landing page concept built in Figma. Designed for modern startups and futuristic digital products, it features glowing neon visuals, immersive UI, and a dynamic tone. The design encapsulates the cutting-edge possibilities of AI and tech, offering a glimpse into the future of online experiences for tech-forward companies.",
+    description: "Afin de valider mon cours d'analyse du besoin, nous avons dû préparer le lancement d'un projet informatique, en l'occurence mon projet consistait en l'ajout d'une ia dans des sites de d'agence immobillière afin de pouvoir trouver plus simplement le bien qui nous correspond le mieux en discutant avec l'ia. J'ai dû réaliser: l'analyse du besoin, validation cadrage, réalisation, recette, communication, lancement, suivi .",
     image: "/projects/project-1.png",
   },
   
