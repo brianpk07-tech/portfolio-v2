@@ -34,7 +34,7 @@ const featuredProjects: Project[] = [
     id: 4, // ID unique
     title: "Développement d'une Méssagerie – Python",
     description: "Egalement dans le cadre de mon bachelor, j'ai dévellopé une messagerie local en python qui théoriquement fait communiquer deux ordinateurs entres eux, sauvegarde les conversations dans des logs, ainsi qu'un système de transfert d'image.",
-    images: ["/projects/project-2.png", "/projects/project-1.png"],
+    images: ["/projects/4-1.png", "/projects/4-2.png", "/projects/4-3.png", "/projects/4-4.png", "/projects/4-5.png",],
   },
   {
     id: 5, // ID unique
