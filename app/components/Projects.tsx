@@ -27,19 +27,19 @@ const featuredProjects: Project[] = [
   {
     id: 3, // ID unique
     title: "Etude de Marché – Michelin & Apple",
-    description: "Dans le cadre de mon bachelor, j'ai fait des études de marchés poussés en utilisant différents type d'outils d'analyse tels que le swot, pestel, matrice d'Eisenhower, 4P... J'ai étudié le cas de Apple ainsi que celui de Michelin.",
+    description: "Dans le cadre de mon bachelor, j'ai fait des études de marchés poussées en utilisant différents types d'outils d'analyse tels que le swot, pestel, matrice d'Eisenhower, 4P... J'ai étudié le cas de Apple ainsi que celui de Michelin.",
     images: ["/projects/3-1.png", "/projects/3-2.png","/projects/3-3.png", "/projects/3-4.png", "/projects/3-5.png", "/projects/3-6.png", "/projects/3-7.png", "/projects/3-8.png", "/projects/3-9.png", "/projects/3-10.png"],
   },
   {
     id: 4, // ID unique
-    title: "Développement d'une Méssagerie – Python",
-    description: "Egalement dans le cadre de mon bachelor, j'ai dévellopé une messagerie local en python qui théoriquement fait communiquer deux ordinateurs entres eux, sauvegarde les conversations dans des logs, ainsi qu'un système de transfert d'image.",
+    title: "Développement d'une Messagerie – Python",
+    description: "Egalement dans le cadre de mon bachelor, j'ai développé une messagerie locale en python qui théoriquement fait communiquer deux ordinateurs entres eux, sauvegarde les conversations dans des logs, ainsi qu'un système de transfert d'images.",
     images: ["/projects/4-1.png", "/projects/4-2.png", "/projects/4-3.png", "/projects/4-4.png", "/projects/4-5.png",],
   },
   {
     id: 5, // ID unique
     title: "Projet de lancement d'une App – ChatBot Orpi",
-    description: "Afin de valider mon cours d'analyse du besoin, nous avons dû préparer le lancement d'un projet informatique, en l'occurence mon projet consistait en l'ajout d'une ia dans des sites de d'agence immobillière afin de pouvoir trouver plus simplement le bien qui nous correspond le mieux en discutant avec l'ia. J'ai dû réaliser: l'analyse du besoin, validation cadrage, réalisation, recette, communication, lancement, suivi .",
+    description: "Afin de valider mon cours d'analyse du besoin, nous avons dû préparer le lancement d'un projet informatique, en l'occurence mon projet consistait en l'ajout d'une ia dans des sites d'agences immobillières afin de pouvoir trouver plus simplement le bien qui nous correspond le mieux en discutant avec l'ia. J'ai dû réaliser: l'analyse du besoin, validation cadrage, réalisation, recette, communication, lancement, suivi .",
     images: ["/projects/5-1.png", "/projects/5-2.png","/projects/5-3.png", "/projects/5-4.png", "/projects/5-5.png", "/projects/5-6.png", "/projects/5-7.png", "/projects/5-8.png", "/projects/5-9.png", "/projects/5-10.png", "/projects/5-11.png" , "/projects/5-12.png" , "/projects/5-13.png"],
   }, 
 ];
