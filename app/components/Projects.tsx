@@ -1,10 +1,13 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 interface Project {
   id: number;
   title: string;
   description: string;
-  image: string;
+  images: string[]; // Modifié en tableau pour gérer le carrousel
   link?: string;
 }
 
@@ -13,34 +16,90 @@ const featuredProjects: Project[] = [
     id: 1,
     title: "Developpement Web – Site de concession",
     description: "J'ai toujours aimé les voitures, dans mon temps libre pendant mon année de seconde, j'ai développé un site de concession automobile tout en apprenant le html, css et javascript à ce moment là.",
-    image: "/projects/project-1.png",
+    images: ["/projects/project-1.png", "/projects/project-2.png"],
   },
   {
     id: 2,
     title: "Modélisation 3D – Reproduction de Los Angeles",
     description: "Depuis plusieurs années, je modélise en 3D via l'outil blender, en 2025 j'ai commencé une reproduction miniaturisée de la ville de los angeles aux états unis.",
-    image: "/projects/project-2.png",
+    images: ["/projects/project-2.png", "/projects/project-1.png"],
   },
   {
-    id: 1,
+    id: 3, // ID unique
     title: "Etude de Marché – Michelin & Apple",
     description: "Dans le cadre de mon bachelor, j'ai fait des études de marchés poussés en utilisant différents type d'outils d'analyse tels que le swot, pestel, matrice d'Eisenhower, 4P... J'ai étudié le cas de Apple ainsi que celui de Michelin.",
-    image: "/projects/project-1.png",
+    images: ["/projects/project-1.png", "/projects/project-2.png"],
   },
   {
-    id: 2,
+    id: 4, // ID unique
     title: "Développement d'une Méssagerie – Python",
     description: "Egalement dans le cadre de mon bachelor, j'ai dévellopé une messagerie local en python qui théoriquement fait communiquer deux ordinateurs entres eux, sauvegarde les conversations dans des logs, ainsi qu'un système de transfert d'image.",
-    image: "/projects/project-2.png",
+    images: ["/projects/project-2.png", "/projects/project-1.png"],
   },
   {
-    id: 1,
-    title: "Projet de lancement d'une App – Préparation",
+    id: 5, // ID unique
+    title: "Projet de lancement d'une App – Preparation",
     description: "Afin de valider mon cours d'analyse du besoin, nous avons dû préparer le lancement d'un projet informatique, en l'occurence mon projet consistait en l'ajout d'une ia dans des sites de d'agence immobillière afin de pouvoir trouver plus simplement le bien qui nous correspond le mieux en discutant avec l'ia. J'ai dû réaliser: l'analyse du besoin, validation cadrage, réalisation, recette, communication, lancement, suivi .",
-    image: "/projects/project-1.png",
+    images: ["/projects/project-1.png", "/projects/project-2.png"],
   },
-  
 ];
+
+// Sous-composant pour gérer les images et les flèches de chaque projet indépendamment
+function ProjectCarousel({ images, title }: { images: string[]; title: string }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 : 0 : prevIndex + 1));
+  };
+
+  return (
+    <div className="flex flex-col items-center gap-4 w-full">
+      {/* Container Image */}
+      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 p-2 lg:p-3 shadow-2xl">
+        <div className="relative w-full h-full rounded-lg overflow-hidden">
+          <Image
+            src={images[currentIndex]}
+            alt={`${title} - image ${currentIndex + 1}`}
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="object-cover transition-all duration-300"
+          />
+        </div>
+      </div>
+
+      {/* Flèches de navigation en bas de l'image */}
+      <div className="flex items-center gap-6 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full backdrop-blur-sm">
+        <button
+          onClick={handlePrev}
+          className="text-white/60 hover:text-purple-400 transition-colors"
+          aria-label="Image précédente"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+
+        <span className="text-sm text-white/50 font-mono">
+          {currentIndex + 1} / {images.length}
+        </span>
+
+        <button
+          onClick={handleNext}
+          className="text-white/60 hover:text-purple-400 transition-colors"
+          aria-label="Image suivante"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export default function Projects(): React.JSX.Element {
   return (
@@ -50,7 +109,7 @@ export default function Projects(): React.JSX.Element {
           const isEven = index % 2 === 1;
           
           return (
-            <div key={project.id} className="mb-20 last:mb-0">
+            <div key={project.id} className="mb-28 last:mb-0">
               <div className={`relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
                 isEven ? "lg:grid-flow-dense" : ""
               }`}>
@@ -62,7 +121,8 @@ export default function Projects(): React.JSX.Element {
                   <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">
                     {project.title}
                   </h3>
-                  {/* Description Card - extends over image */}
+                  
+                  {/* Description Card */}
                   <div className="relative z-10 mb-6">
                     <div className={`bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-md rounded-2xl p-6 lg:p-8 border border-white/10 shadow-lg ${
                       isEven ? "lg:ml-[-20%]" : "lg:w-[calc(100%+20%)]"
@@ -72,6 +132,7 @@ export default function Projects(): React.JSX.Element {
                       </p>
                     </div>
                   </div>
+
                   {/* Website link */}
                   {project.link && (
                     <div className="flex gap-4">
@@ -101,19 +162,9 @@ export default function Projects(): React.JSX.Element {
                   )}
                 </div>
 
-                {/* Image Content */}
+                {/* Image Content (Appel du composant Carrousel) */}
                 <div className={`${isEven ? "lg:col-start-1 lg:row-start-1" : ""}`}>
-                  <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 p-2 lg:p-3 shadow-2xl">
-                    <div className="relative w-full h-full rounded-lg overflow-hidden">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
+                  <ProjectCarousel images={project.images} title={project.title} />
                 </div>
               </div>
             </div>
@@ -123,4 +174,3 @@ export default function Projects(): React.JSX.Element {
     </section>
   );
 }
-
