@@ -16,13 +16,13 @@ const featuredProjects: Project[] = [
     id: 1,
     title: "Developpement Web – Site de concession",
     description: "J'ai toujours aimé les voitures, dans mon temps libre pendant mon année de seconde, j'ai développé un site de concession automobile tout en apprenant le html, css et javascript à ce moment là.",
-    images: ["/projects/1-1.png", "/projects/1-2.png", "/projects/1-3.png", "/projects/1-4.png", "/projects/1-5.png"],
+    images: ["/projects/1-1.png", "/projects/1-2.png", "/projects/1-5.png"],
   },
   {
     id: 2,
     title: "Modélisation 3D – Reproduction de Los Angeles",
     description: "Depuis plusieurs années, je modélise en 3D via l'outil blender, en 2025 j'ai commencé une reproduction miniaturisée de la ville de los angeles aux états unis.",
-    images: ["/projects/project-2.png", "/projects/project-1.png"],
+    images: ["/projects/2-1.jpeg", "/projects/2-2.jpeg", "/projects/2-3.jpeg", "/projects/2-4.jpeg", "/projects/2-5.jpeg", "/projects/2-6.jpeg",],
   },
   {
     id: 3, // ID unique
