@@ -137,14 +137,14 @@ export default function Banner(): React.JSX.Element {
             <span className="animate-pulse">|</span>
           </p>
           <p className="text-lg lg:text-xl text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
-            <span>Actuellement, étudiant à</span>
+            <span>Actuellement, étudiant en</span>
             <span className="flex items-center gap-2">
               <Image src="/assets/webhr.webp" alt="WebHR" width={20} height={20} className="w-5 h-5" style={{ width: "auto", height: "auto" }} />
-              <span className="text-blue-400 font-semibold">L'EPF,</span>
+              <span className="text-blue-400 font-semibold">Ingénierie Data Sciences et Management</span>
             </span>
           </p>
           <p className="text-lg text-white/80 max-w-2xl mt-15 mx-auto lg:mx-0">
-            Étudiant en ingénierie et stratégie marketing, je me positionne à la croisée de la technique et du business. Capable aussi bien de coder des sites web et des applications en Python que de piloter des études de marché complexes, je mets cette double compétence au service de projets numériques innovants.
+            Doté d’un bon relationnel et du sens du service, je me positionne à la croisée de la technique et du business. Capable aussi bien de coder des sites web et des applications en Python que de piloter des études de marché complexes, je mets cette double compétence au service de projets numériques innovants.
           </p>
         </div>
       </div>
