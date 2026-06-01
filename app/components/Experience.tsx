@@ -11,15 +11,15 @@ interface ExperienceCard {
 const experienceCards: ExperienceCard[] = [
   {
     id: 1,
-    title: "WebHR - HR Management App",
-    description: "WebHR automates all of your company's HR processes such as Recruitment, Onboarding, Payroll, Time & Attendance, Leaves & PTO, Performance, and much more.",
-    icon: "/cards/card-1.png",
+    title: "Serveur - Pizzeria Il Pescatore",
+    description: "De 2020 à 2022 j'ai été serveur dans une pizzeria, cela m'a appris à gérer la préssion d'avoir beaucoups de clients à la fois, à dévellopé mon relationnel et mon service client. ",
+    icon: "/cards/card-2.png",
   },
   {
     id: 2,
-    title: "WebHR Kiosk - Time Clock Kiosk",
-    description: "WebHR Kiosk is a time clock kiosk that allows you to clock in and out of your work. It is a simple and easy to use app that allows you to clock in and out of your work.",
-    icon: "/cards/card-2.png",
+    title: "Developpeur Web - CDD de 2 mois",
+    description: "Dans le cadre d'un stage à l'étranger imposé par mon école, j'ai travaillé deux mois comme développeur web pour une association caritative en croatie où j'avais pour mission d'ajouter un système d'inscripiton et de suivi directement sur leur site à la place d'un forms et de google sheet.",
+    icon: "/cards/card-3.png",
   },
 ];
 
@@ -28,7 +28,7 @@ export default function Experience(): React.JSX.Element {
     <section id="experience" className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
-          Work Experience
+          Experience Professionel
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {experienceCards.map((card) => (
