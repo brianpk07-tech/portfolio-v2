@@ -13,7 +13,6 @@ export default function Footer(): React.JSX.Element {
             Actuellement à la recherche d'une alternance de 2 ans à partir de septembre 2026, je souhaite mettre ma double compétence en tech et en marketing au service de projets concrets et centrés sur l'utilisateur. Un projet en tête ou envie d'échanger ? Discutons-en !
           </p>
           <a
-            href="brianpk07@gmail.com"
             className="text-md text-purple-400 hover:text-purple-300 transition-colors"
           >
             brianpk07@gmail.com
