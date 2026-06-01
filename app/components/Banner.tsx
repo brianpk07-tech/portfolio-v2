@@ -119,7 +119,7 @@ export default function Banner(): React.JSX.Element {
                 Juge un livre
                 <br /> à sa{" "}
                 <span className="relative inline-block">
-                  <Image src="/assets/circle.png" alt="Circle" width={300} height={200} className="absolute max-w-none w-[112%] left-[-6%] -top-4" />
+                  <Image src="/assets/circle.png" alt="Circle" width={300} height={200} className="absolute max-w-none w-[112%]" style={{ left: "-6%", top: "-18px" }} />
                   <span className="bg-gradient-to-r from-violet-600 via-violet-400 to-violet-600 bg-clip-text text-transparent">
                     couverture
                   </span>
