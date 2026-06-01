@@ -40,7 +40,7 @@ const featuredProjects: Project[] = [
     id: 5, // ID unique
     title: "Projet de lancement d'une App – ChatBot Orpi",
     description: "Afin de valider mon cours d'analyse du besoin, nous avons dû préparer le lancement d'un projet informatique, en l'occurence mon projet consistait en l'ajout d'une ia dans des sites de d'agence immobillière afin de pouvoir trouver plus simplement le bien qui nous correspond le mieux en discutant avec l'ia. J'ai dû réaliser: l'analyse du besoin, validation cadrage, réalisation, recette, communication, lancement, suivi .",
-    images: ["/projects/5-1.png", "/projects/5-2.png","/projects/5-3.png", "/projects/5-4.png", "/projects/5-5.png", "/projects/5-6.png", "/projects/5-7.png", "/projects/5-8.png", "/projects/5-9.png", "/projects/5-10.png", "/projects/5-11.png" , "/projects/5-12.png"] , "/projects/5-13.png",
+    images: ["/projects/5-1.png", "/projects/5-2.png","/projects/5-3.png", "/projects/5-4.png", "/projects/5-5.png", "/projects/5-6.png", "/projects/5-7.png", "/projects/5-8.png", "/projects/5-9.png", "/projects/5-10.png", "/projects/5-11.png" , "/projects/5-12.png" , "/projects/5-13.png"],
   }, 
 ];
 
