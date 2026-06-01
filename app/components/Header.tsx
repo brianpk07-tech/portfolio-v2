@@ -18,7 +18,7 @@ export default function Header(): React.JSX.Element {
                 href="#home" 
                 className="text-white hover:text-purple-400 transition-colors text-base font-normal"
               >
-                Home
+                Acceuil
               </Link>
             </li>
             <li className="m-0 p-0">
@@ -26,7 +26,7 @@ export default function Header(): React.JSX.Element {
                 href="#lab" 
                 className="text-white hover:text-purple-400 transition-colors text-base font-normal"
               >
-                Lab
+                Projets
               </Link>
             </li>
           </ul>
