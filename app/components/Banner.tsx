@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Banner(): React.JSX.Element {
-  const texts = ["Software Engineer", "UI/UX Designer", "React Native Developer"];
+  const texts = ["Étudiant En Ingénierie", "Développeur Python & Web", "Marketeur Digital"];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -67,7 +67,7 @@ export default function Banner(): React.JSX.Element {
                   />
                   <div className="relative">
                     <p className="text-white text-lg whitespace-nowrap">
-                      Bonjour! I Am{" "}
+                      Bonjour! Je suis{" "}
                       <span className="text-purple-400">Brian Parkansky</span>
                     </p>
                   </div>
@@ -119,7 +119,7 @@ export default function Banner(): React.JSX.Element {
                 Juge un livre
                 <br /> à sa{" "}
                 <span className="relative inline-block">
-                  <Image src="/assets/circle.png" alt="Circle" width={200} height={200} className="absolute mt-2" />
+                  <Image src="/assets/circle.png" alt="Circle" width={300} height={200} className="absolute mt-2 max-w-none w-[125%] left-[-12%]" />
                   <span className="bg-gradient-to-r from-violet-600 via-violet-400 to-violet-600 bg-clip-text text-transparent">
                     couverture
                   </span>
