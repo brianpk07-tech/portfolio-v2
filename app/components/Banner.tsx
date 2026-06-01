@@ -67,7 +67,7 @@ export default function Banner(): React.JSX.Element {
                   />
                   <div className="relative">
                     <p className="text-white text-lg whitespace-nowrap">
-                      Hello! I Am{" "}
+                      Bonjour! Je suis{" "}
                       <span className="text-purple-400">Brian Parkansky</span>
                     </p>
                   </div>
@@ -107,27 +107,27 @@ export default function Banner(): React.JSX.Element {
               />
               <div style={{ bottom: 40, position: "relative" }}>
                 <p className="text-white text-lg">
-                  Hello! I Am{" "}
+                  Bonjour! Je suis{" "}
                   <span className="text-purple-400">Brian Parkansky</span>
                 </p>
               </div>
               <div className="absolute -bottom-2 left-8 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
             </div>
             <div className="">
-              <p className="text-2xl"> A Designer who </p>
+              <p className="text-2xl"> Un étudiant qui </p>
               <h1 className="text-5xl tracking-tight lg:text-7xl font-semibold text-white leading-tight">
-                Judges a book
-                <br /> by its{" "}
+                Juge un livre
+                <br /> à sa{" "}
                 <span className="relative inline-block">
                   <Image src="/assets/circle.png" alt="Circle" width={200} height={200} className="absolute mt-2" />
                   <span className="bg-gradient-to-r from-violet-600 via-violet-400 to-violet-600 bg-clip-text text-transparent">
-                    cover
+                    couverture
                   </span>
                 </span>
                 ...
               </h1>
               <p className="text-md text-white/80">
-                Because if the cover does not impress you what else can?
+                Après tout, si la couverture ne vous impressionne pas, qu'est-ce qui le pourrait ?
               </p>
             </div>
           </div>
@@ -138,16 +138,14 @@ export default function Banner(): React.JSX.Element {
             <span className="animate-pulse">|</span>
           </p>
           <p className="text-lg lg:text-xl text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
-            <span>Currently, I&apos;m a Software Engineer at</span>
+            <span>Actuellement, étudiant à</span>
             <span className="flex items-center gap-2">
               <Image src="/assets/webhr.webp" alt="WebHR" width={20} height={20} className="w-5 h-5" style={{ width: "auto", height: "auto" }} />
-              <span className="text-blue-400 font-semibold">WebHR,</span>
+              <span className="text-blue-400 font-semibold">L'EPF,</span>
             </span>
           </p>
           <p className="text-lg text-white/80 max-w-2xl mt-15 mx-auto lg:mx-0">
-            A self-taught UI/UX designer, functioning in the industry for 3+
-            years now. I make meaningful and delightful digital products that
-            create an equilibrium between user needs and business goals.
+            Étudiant en ingénierie et stratégie marketing, je me positionne à la croisée de la technique et du business. Capable aussi bien de coder des sites web et des applications en Python que de piloter des études de marché complexes, je mets cette double compétence au service de projets numériques innovants.
           </p>
         </div>
       </div>
