@@ -16,7 +16,7 @@ const featuredProjects: Project[] = [
     id: 1,
     title: "Developpement Web – Site de concession",
     description: "J'ai toujours aimé les voitures, dans mon temps libre pendant mon année de seconde, j'ai développé un site de concession automobile tout en apprenant le html, css et javascript à ce moment là.",
-    images: ["/projects/project-1.png", "/projects/project-2.png"],
+    images: ["/projects/1-1.png", "/projects/1-2.png", "/projects/1-3.png", "/projects/1-4.png", "/projects/1-5.png"],
   },
   {
     id: 2,
