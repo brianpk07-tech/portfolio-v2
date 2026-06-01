@@ -21,18 +21,6 @@ const experienceCards: ExperienceCard[] = [
     description: "WebHR Kiosk is a time clock kiosk that allows you to clock in and out of your work. It is a simple and easy to use app that allows you to clock in and out of your work.",
     icon: "/cards/card-2.png",
   },
-  {
-    id: 3,
-    title: "Somezing - AI-Powered Agents",
-    description: "Somezing is a AI-Powered Agents to Automate Your Workflows. It is a simple and easy to use app that allows you to automate your workflows.",
-    icon: "/cards/card-3.png",
-  },
-  {
-    id: 4,
-    title: "FileIT - File Sharing App",
-    description: "FileIT is a file sharing app that allows you to share files with your friends and family. It is a simple and easy to use app that allows you to share files with your friends and family.",
-    icon: "/cards/card-4.png",
-  },
 ];
 
 export default function Experience(): React.JSX.Element {
@@ -64,14 +52,6 @@ export default function Experience(): React.JSX.Element {
               <p className="text-white/70 text-sm mb-4">
                 {card.description}
               </p>
-              <Link
-                href="https://ibiimemon.com/lab"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"
-              >
-                LEARN MORE →
-              </Link>
               </div>
 
             </div>
