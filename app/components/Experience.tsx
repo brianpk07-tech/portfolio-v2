@@ -12,7 +12,7 @@ const experienceCards: ExperienceCard[] = [
   {
     id: 1,
     title: "Serveur - Pizzeria Il Pescatore",
-    description: "De 2020 à 2022 j'ai été serveur dans une pizzeria, cela m'a appris à gérer la préssion d'avoir beaucoups de clients à la fois, à dévellopé mon relationnel et mon service client. ",
+    description: "De 2020 à 2022 j'ai été serveur dans une pizzeria, cela m'a appris à gérer la pression d'avoir beaucoup de clients à la fois, à developper mon relationnel et mon service client. ",
     icon: "/cards/card-2.png",
   },
   {
@@ -28,7 +28,7 @@ export default function Experience(): React.JSX.Element {
     <section id="experience" className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
-          Experience Professionel
+          Experience Professionelle
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {experienceCards.map((card) => (

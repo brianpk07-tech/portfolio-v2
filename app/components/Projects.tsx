@@ -21,7 +21,7 @@ const featuredProjects: Project[] = [
   {
     id: 2,
     title: "Modélisation 3D – Reproduction de Los Angeles",
-    description: "Depuis plusieurs années, je modélise en 3D via l'outil blender, en 2025 j'ai commencé une reproduction miniaturisée de la ville de los angeles aux états unis.",
+    description: "Depuis plusieurs années, je modélise en 3D via l'outil blender, en 2025 j'ai commencé une reproduction miniaturisée de la ville de los angeles aux Etats Unis.",
     images: ["/projects/2-1.jpeg", "/projects/2-2.jpeg", "/projects/2-3.jpeg", "/projects/2-4.jpeg", "/projects/2-5.jpeg", "/projects/2-6.jpeg",],
   },
   {
