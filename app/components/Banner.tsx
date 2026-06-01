@@ -138,7 +138,6 @@ export default function Banner(): React.JSX.Element {
           </p>
           <p className="text-lg lg:text-xl text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
             <span>Actuellement, étudiant en</span>
-            <span className="flex items-center gap-2">
               <span className="text-blue-400 font-semibold">Ingénierie Data Sciences et Management</span>
             </span>
           </p>
